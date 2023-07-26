@@ -1,0 +1,143 @@
+@import "mixin";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: #000;  
+
+        &:hover {
+            color: #df0202;
+            transition: 0.7s;
+        }
+    }
+
+    li {
+        list-style-type: none;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width:500px) {
+            flex-direction: column;
+        }
+    }
+    
+    .background {
+        background-color: #302e2f;
+    }
+}
+
+.res {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+
+    .right_side {
+        span {
+            color:  #fff;
+            @include items;
+            font-size: 12px;
+            
+            &:hover {
+                background-color: #df0202;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .left_side {
+        a {
+            @include items;
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+
+            &:hover {
+                background-color: #df0202;
+
+            }
+        }
+        @media only screen and (max-width:992px){
+            .social_media {
+                display: inline-flex;
+            }
+            time {
+                display: block;
+            }
+        }
+        time {
+            color: #fff;
+            padding: 0 15px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.part2 {
+    padding: 8px 0;
+    background-image: url(/images/dotted_background.jpg);
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .logo{
+        flex-basis: 12%;
+        margin-left: 10px;
+    }
+
+    .navbar{
+    flex-basis: 80%;
+    }
+
+    .menu {
+        flex-basis: 8%;
+        padding-bottom: 2px;
+        border-bottom:2px solid #000;
+
+        a {
+            padding: 5px; 
+            display: flex;
+        }
+
+        span {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .side_menu {
+            background-color: #eb0017;
+        }
+    }
+}
+
+
+

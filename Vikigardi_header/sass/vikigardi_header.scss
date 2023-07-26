@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "IRANSansWeb_Bold";
+    src: url(/fonts/IRANSansWeb_Bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.res {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.part1 {
+    background-color: #191c21;
+    border-top: 3px solid #a50000;
+    padding: 0 5px;
+}
+
+.background {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 11px 0;
+    @media only screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.right {
+    ul {
+        align-items: center;
+        gap: 5px;
+
+        a {
+            display: flex;
+        }
+    }
+}
+
+.left {
+    color: #c6cbc9;
+
+    .en_date {
+        direction: ltr;
+    }
+
+    .time {
+    display: flex;
+    align-items: end;
+        .red_dot {
+            display: flex;
+            padding: 0 2px;
+        }
+    }
+}
+
+
+.part2 {
+    background-color: #000;
+    font-family: "IRANSansWeb_Bold";
+    padding: 15px 0;
+    @media only screen and (max-width:768px) {
+        position: relative;
+    }
+
+    .logo {
+        width: 200px;
+        @media only screen and (max-width:768px) {
+        margin-bottom: 30px;
+        padding-right: 10px;
+        }
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+
+    .parent {
+        display: flex;
+        @media only screen and (min-width:768px) {
+        align-items: center;
+        }
+        justify-content: space-between;
+        @media only screen and (max-width:768px) {
+            flex-direction: column;
+        }
+        .nav_bar {
+            flex-basis: 75%;
+            
+            @media only screen and (max-width:768px){
+                display: flex;
+                justify-content: center;
+            }}
+            a {
+                &:hover {
+                    border-bottom:  2px solid #ffb244;
+                    transition: 0.2s;
+                }
+            }
+        }
+        .search_box {
+            background-color: #000;
+            border: unset;
+            button {
+                display: flex;
+                cursor: pointer;
+            }
+            @media only screen and (max-width:768px){
+                position: absolute;
+                top: 20px;
+                left: 5px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media only screen and (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+}

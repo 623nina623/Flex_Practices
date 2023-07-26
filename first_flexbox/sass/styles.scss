@@ -1,0 +1,29 @@
+body {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header , .footer{
+    background-color: #9acd32;
+    height: 220px;
+    padding: 20px;
+}
+
+.main {
+    @media only screen and (max-width:968px) {
+        flex-direction: column;
+    }
+    display: flex;
+    height: 980px;
+
+    nav , aside {
+        background-color: #f5f5dc;
+        flex-grow: 1;
+        padding: 20px;
+    }
+    article {
+        background-color: #fff;
+        flex-grow: 3;
+        padding: 20px;
+    }
+}

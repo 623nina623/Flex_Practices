@@ -1,0 +1,14 @@
+{
+  "name": "vikigardi_header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass sass/vikigardi_header.scss css/vikigardi_header.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

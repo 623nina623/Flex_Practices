@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+  body a {
+    text-decoration: none;
+    color: #000; }
+    body a:hover {
+      color: #df0202;
+      transition: 0.7s; }
+  body li {
+    list-style-type: none; }
+  body ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 500px) {
+      body ul {
+        flex-direction: column; } }
+  body .background {
+    background-color: #302e2f; }
+
+.res {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.part1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0; }
+  .part1 .right_side span {
+    color: #fff;
+    background-color: #626262;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 3px;
+    font-size: 12px; }
+    .part1 .right_side span:hover {
+      background-color: #df0202;
+      transition: 0.5s; }
+  .part1 .left_side a {
+    background-color: #626262;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 3px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center; }
+    .part1 .left_side a:hover {
+      background-color: #df0202; }
+  @media only screen and (max-width: 992px) {
+    .part1 .left_side .social_media {
+      display: inline-flex; }
+    .part1 .left_side time {
+      display: block; } }
+  .part1 .left_side time {
+    color: #fff;
+    padding: 0 15px;
+    font-size: 0.8rem; }
+
+.part2 {
+  padding: 8px 0;
+  background-image: url(/images/dotted_background.jpg); }
+  .part2 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+  .part2 .logo {
+    flex-basis: 12%;
+    margin-left: 10px; }
+  .part2 .navbar {
+    flex-basis: 80%; }
+  .part2 .menu {
+    flex-basis: 8%;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000; }
+    .part2 .menu a {
+      padding: 5px;
+      display: flex; }
+    .part2 .menu span {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 22px; }
+    .part2 .menu .side_menu {
+      background-color: #eb0017; }
