@@ -84,7 +84,8 @@ a {
       .part2 .parent {
         flex-direction: column; } }
     .part2 .parent .nav_bar {
-      flex-basis: 75%; }
+      flex-basis: 75%;
+      padding-right: 10px; }
       @media only screen and (max-width: 768px) {
         .part2 .parent .nav_bar {
           display: flex;

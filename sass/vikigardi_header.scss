@@ -112,6 +112,7 @@ a {
         }
         .nav_bar {
             flex-basis: 75%;
+            padding-right: 10px;
             
             @media only screen and (max-width:768px){
                 display: flex;
